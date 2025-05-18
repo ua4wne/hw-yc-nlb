@@ -17,7 +17,7 @@ output "Network_Load_Balancer_Address" {
   description = "Адрес сетевого балансировщика"
 }
 
-# output "Application_Load_Balancer_Address" {
-#   value = yandex_alb_load_balancer.application-balancer.listener.*.endpoint[0].*.address[0].*.external_ipv4_address
-#   description = "Адрес L7-балансировщика"
-# }
+output "Application_Load_Balancer_Address" {
+  value = yandex_alb_load_balancer.application-balancer.listener.*.endpoint[0].*.address[0].*.external_ipv4_address
+  description = "Адрес L7-балансировщика"
+}
