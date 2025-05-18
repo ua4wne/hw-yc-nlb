@@ -22,7 +22,7 @@ variable "bucket_name" {
 
 variable "default_cidr" {
   type        = list(string)
-  default     = ["10.0.1.0/24"]
+  default     = ["192.168.10.0/24"]
   description = "https://cloud.yandex.ru/docs/vpc/operations/subnet-create"
 }
 
@@ -73,10 +73,9 @@ variable "vm_user" {
   description = "default user"
 }
 
-variable "vm_family" {
-  type        = string
-  default     = "ubuntu-2404-lts-oslogin"
-  description = "yandex_compute_image"
+# Lamp
+variable "lamp-instance-image-id" {
+  default = "fd827b91d99psvq5fjit"
 }
 
 variable "metadata_map" {

@@ -20,9 +20,29 @@
     Разместить в стартовой веб-странице шаблонной ВМ ссылку на картинку из бакета.
     Настроить проверку состояния ВМ.
 
+>[group_vm.tf](./terraform/group_vm.tf)
+
+![group-vm.png](./task1/group-vm.png)
+![all-vm.png](./task1/all-vm.png)
+
 ## 3. Подключить группу к сетевому балансировщику:
 
     Создать сетевой балансировщик.
     Проверить работоспособность, удалив одну или несколько ВМ.
+
+>[nlb.tf](./terraform/nlb.tf)
+
+![nlb-deploy.png](./task1/nlb-deploy.png)
+![nlb.png](./task1/nlb.png)
+![site.png](./task1/site.png)
+
+>Остановим две машины из трех и проверим работоспособность сайта
+
+![stop-vm.png](./task1/stop-vm.png)
+
+>Как видим, сайт работает!
+
+![site.png](./task1/site.png)
+
 
 ## 4. (дополнительно)* Создать Application Load Balancer с использованием Instance group и проверкой состояния.
