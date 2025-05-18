@@ -9,6 +9,7 @@
 >[s3.tf](./terraform/s3.tf)
 
 ![s3.png](./task1/s3.png)
+![yc-backet.png](./task1/yc-backet.png)
 ![upload.png](./task1/upload.png)
 
 

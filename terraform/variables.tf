@@ -20,27 +20,21 @@ variable "bucket_name" {
   description = "S3 backet name"
 }
 
-variable "private_cidr" {
+variable "default_cidr" {
   type        = list(string)
-  default     = ["192.168.20.0/24"]
+  default     = ["10.0.1.0/24"]
   description = "https://cloud.yandex.ru/docs/vpc/operations/subnet-create"
 }
 
 variable "vpc_name" {
   type        = string
-  default     = "netology-net"
+  default     = "web-develop"
   description = "VPC network&subnet name"
 }
 
 variable "public_subnet" {
   type        = string
-  default     = "public"
-  description = "subnet name"
-}
-
-variable "private_subnet" {
-  type        = string
-  default     = "private"
+  default     = "public-subnet"
   description = "subnet name"
 }
 
