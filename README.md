@@ -48,8 +48,11 @@
 ## 4. (дополнительно)* Создать Application Load Balancer с использованием Instance group и проверкой состояния.
 
 >[l7_target_group.tf](./terraform/l7_target_group.tf)
+
 >[l7_lb.tf](./terraform/l7_lb.tf)
+
 >[l7_http_router.tf](./terraform/l7_http_router.tf)
+
 >[l7_backend.tf](./terraform/l7_backend.tf)
 
 ![l7-deploy.png](./task1/l7-deploy.png)
