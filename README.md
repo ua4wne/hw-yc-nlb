@@ -12,9 +12,13 @@
 >[s3.tf](./terraform/s3.tf)
 
 ![s3.png](./task1/s3.png)
+
 ![upload.png](./task1/upload.png)
+
 ![kms.png](./task1/kms.png)
+
 ![picture.png](./task1/picture.png)
+
 ![result.png](./task1/result.png)
 
 
@@ -24,8 +28,17 @@
     создать статическую страницу в Object Storage и применить сертификат HTTPS;
     в качестве результата предоставить скриншот на страницу с сертификатом в заголовке (замочек).
 
+>Создаем сертификат от Let`s Encrypt
+
 ![cert.png](./task1/cert.png)
+
 ![validate.png](./task1/validate.png)
+
+>Создаем бакет, в котором разместим статичную страницу index.html. Бакет имеет то же имя, что и домен для сайта.
+
 ![backet.png](./task1/backet.png)
+
+>Сайт открывается через https
+
 ![ssl.png](./task1/ssl.png)
 
