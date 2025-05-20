@@ -34,7 +34,15 @@ resource "yandex_storage_bucket" "s3-bucket" {
   secret_key = yandex_iam_service_account_static_access_key.sa-static-key.secret_key
   bucket = "${var.bucket_name}-${random_string.unique_id.result}"
   acl    = "public-read"
-  depends_on = [yandex_iam_service_account_static_access_key.sa-static-key]
+  server_side_encryption_configuration {
+    rule {
+      apply_server_side_encryption_by_default {
+        kms_master_key_id = yandex_kms_symmetric_key.secret-key.id
+        sse_algorithm     = "aws:kms"
+      }
+    }
+  }
+  depends_on = [yandex_iam_service_account_static_access_key.sa-static-key, yandex_kms_symmetric_key.secret-key]
 }
 
 // Add picture to bucket
