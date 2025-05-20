@@ -17,9 +17,9 @@
 
 ![upload.png](./task1/upload.png)
 
-![kms.png](./task1/kms.png)
-
 ![picture.png](./task1/picture.png)
+
+![kms.png](./task1/kms.png)
 
 >Файл в бакете зашифрован и не доступен через публичный доступ.
 
