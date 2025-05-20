@@ -11,6 +11,8 @@
 
 >[s3.tf](./terraform/s3.tf)
 
+![deploy.png](./task1/deploy.png)
+
 ![s3.png](./task1/s3.png)
 
 ![upload.png](./task1/upload.png)
