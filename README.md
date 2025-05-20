@@ -19,6 +19,8 @@
 
 ![picture.png](./task1/picture.png)
 
+>Файл в бакете зашифрован и не доступен через публичный доступ.
+
 ![result.png](./task1/result.png)
 
 
